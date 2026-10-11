@@ -1,18 +1,24 @@
 task.spawn(function()
-    loadstring(game:HttpGet('https://raw.smokingscripts.org/vertex.lua'))()
+    local success, err = pcall(function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/transpervpyinstaller/soft/refs/heads/main/Force%20clip.lua'))()
+    end)
 end)
 
-
 task.spawn(function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    local success, err = pcall(function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/transpervpyinstaller/soft/refs/heads/main/Spinbot.lua'))()
+    end)
 end)
 
-
 task.spawn(function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/transpervpyinstaller/soft/refs/heads/main/Force%20clip.lua'))()
+    local success, err = pcall(function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    end)
 end)
 
-
 task.spawn(function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/transpervpyinstaller/soft/refs/heads/main/Spinbot.lua'))()
+    task.wait(2) 
+    local success, err = pcall(function()
+        loadstring(game:HttpGet('https://raw.smokingscripts.org/vertex.lua'))()
+    end)
 end)
